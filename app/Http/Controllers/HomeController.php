@@ -14,16 +14,13 @@ class HomeController extends Controller
       return view('descripcion.descripcion');
     }
 
-    public function registro(Request $request) {
-      return view('registro.registro');
+    public function perfil(Request $request) {
+      return view('perfil.perfil');
     }
 
-    public function register(Request $request) {
-      return view('registro.register');
+    public function curso(Request $request) {
+      return view('curso.modulo1');
     }
 
-    public function login(Request $request) {
-      return view('login.login');
-    }
 
 }

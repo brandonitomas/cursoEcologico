@@ -3,7 +3,7 @@
 
 <div class="inicio">
 
-  <div class="curso1">Breve descripción de los cursos, sus objetivos y beneficios. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+  <div class="curso1">Cursos orientados a docentes para la introducción de educación ecológica en escuelas primarias y universidades.</div>
 
   <div class="cursos">
     <a href="/descripcion">Curso Ecológico</a>

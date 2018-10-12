@@ -5,7 +5,6 @@
 
 .titulo {
   display: flex;
-  justify-content: center;
   background-image: url("/images/alternative.png");
   background-size: cover;
   background-attachment: fixed;
@@ -14,16 +13,29 @@
   text-align: center;
 }
 
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 50px;
+  margin: 30px;
+  width: 100%;
+}
+
+.menu a {
+  margin: 10px;
+  color: #313947;
+}
+
 header {
   color: black;
-  font-size: 50px;
+  font-size: 150px;
   padding: 30px;
   width: 100%;
 }
 
 p {
   color: black;
-  font-size: 30px;
+  font-size: 90px;
   padding: 30px;
   width: 100%;
 }
@@ -33,14 +45,15 @@ p {
   background-size: cover;
   background-attachment: fixed;
   width: 100%;
-  height: 500px;
+  height: 2000px;
   padding-top: 70px;
 }
 
 .curso1 {
   display: flex;
   justify-content: center;
-  font-size: 30px;
+  text-align: center;
+  font-size: 90px;
   color: white;
   padding-top: 70px;
   margin: 40px;
@@ -49,6 +62,7 @@ p {
 .cursos {
   display: flex;
   justify-content: space-around;
+  flex-flow: wrap;
   margin: 25px;
 }
 
@@ -58,9 +72,13 @@ p {
   color: white;
   text-shadow: 1px 1px 2px white;
   border-radius: 2px 2px 2px 2px;
-  font-size: 30px;
+  font-size: 90px;
   text-decoration: none;
   padding: 30px;
+  margin: 100px;
+  height: 200px;
+  width: 900px;
+  text-align: center;
 }
 
 .cursos a:hover {
@@ -68,21 +86,19 @@ p {
 }
 
 .environment {
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: wrap; */
   background-image: url("/images/planting.jpg");
   background-size: cover;
   background-attachment: fixed;
   width: 100%;
-  height: 500px;
+  height: 2000px;
+  padding-top: 70px;
 }
 
 .descripcion {
   display: flex;
   justify-content: center;
-  font-size: 30px;
+  text-align: center;
+  font-size: 90px;
   color: white;
   padding-top: 70px;
   margin: 40px;
@@ -90,19 +106,24 @@ p {
 
 .comenzar {
   display: flex;
-  justify-content: center;
-  color: white;
+  justify-content: space-around;
+  flex-flow: wrap;
+  margin: 25px;
 }
 
 .comenzar a {
   box-shadow: 0px 0px 1px 1px #FFF4EB;
-  background-color: #303030;
+  background-color: #1dc43c;
   color: white;
   text-shadow: 1px 1px 2px white;
   border-radius: 2px 2px 2px 2px;
-  font-size: 30px;
+  font-size: 90px;
   text-decoration: none;
   padding: 30px;
+  margin: 100px;
+  height: 200px;
+  width: 900px;
+  text-align: center;
 }
 
 .comenzar a:hover {
@@ -110,31 +131,38 @@ p {
 }
 
 .principal {
-  display: flex;
-  justify-content: space-around;
-  background-image: url('/images/arrows.jpg');
+  background-image: url("/images/arrows.jpg");
   background-size: cover;
   background-attachment: fixed;
   width: 100%;
-  height: 500px;
+  height: 2000px;
+  padding-top: 70px;
 }
 
 .registro {
   display: flex;
   justify-content: space-around;
-  margin: 100px;
+  flex-flow: wrap;
+  margin: 25px;
+}
+
+.register, .login {
+  margin:200px;
 }
 
 .register a, .login a{
   box-shadow: 0px 0px 1px 1px #FFF4EB;
-  background-color: #303030;
+  background-color: #1dc43c;
   color: white;
   text-shadow: 1px 1px 2px white;
   border-radius: 2px 2px 2px 2px;
-  font-size: 30px;
-  padding: 30px;
+  font-size: 90px;
   text-decoration: none;
+  padding: 30px;
   margin: 100px;
+  height: 200px;
+  width: 900px;
+  text-align: center;
 }
 
 .register a:hover, .login a:hover {
@@ -142,125 +170,191 @@ p {
 }
 
 .form-style-5{
-    max-width: 500px;
+    max-width: 800px;
     padding: 10px 20px;
     background: #f4f7f8;
-    margin: 10px auto;
+    margin: 40px auto;
     padding: 20px;
     background: #f4f7f8;
     border-radius: 8px;
-    font-family: Georgia, "Times New Roman", Times, serif;
 }
 .form-style-5 fieldset{
     border: none;
 }
 .form-style-5 legend {
-    font-size: 1.4em;
+    font-size: 3.4em;
     margin-bottom: 10px;
 }
 .form-style-5 label {
     display: block;
     margin-bottom: 8px;
 }
-.form-style-5 input[type="text"],
-.form-style-5 input[type="date"],
-.form-style-5 input[type="datetime"],
-.form-style-5 input[type="email"],
-.form-style-5 input[type="password"],
-.form-style-5 input[type="number"],
-.form-style-5 input[type="search"],
-.form-style-5 input[type="time"],
-.form-style-5 input[type="url"],
-.form-style-5 textarea,
-.form-style-5 select {
-    font-family: Georgia, "Times New Roman", Times, serif;
-    background: rgba(255,255,255,.1);
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    margin: 0;
-    outline: 0;
-    padding: 7px;
+
+.card-header {
+  font-size: 50px;
+  margin-bottom: 10px;
+
+}
+
+.col-md-6 input {
+  height: 70px;
+  font-size: 50px;
+}
+
+.col-md-4 {
+  font-size: 30px;
+}
+
+.alerta {
+  padding: 20px;
+  font-size: 20px;
+}
+
+.col-md-6 button {
+  font-size: 40px;
+  height: 100px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.col-md-6 button:hover {
+  opacity:1;
+}
+
+.form-check-input {
+  width: 60px;
+}
+
+.form-check-label {
+  font-size: 30px;
+}
+
+.form-group label {
+  font-size: 30px;
+}
+
+.col-md-8 button {
+  font-size: 40px;
+}
+
+.col-md-8 a {
+  font-size: 40px;
+}
+
+.perfil {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  font-size: 20px;
+  background-color: white;
+}
+
+.ficha {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  font-size: 20px;
+  background-color: #356fd6;
+}
+
+.logout {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  height: 100px;
+  font-size: 20px;
+  background-color: white;
+}
+
+.video {
+  width: 50%;
+  height: 300px;
+  background-color: black;
+}
+
+.biblio {
+  display: flex;
+  flex-flow: column;
+  background-color: white;
+  width: 100%;
+  height: 100px;
+}
+
+.quiz {
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+  width: 100%;
+}
+
+#list {
+  list-style-type: none;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
     width: 100%;
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    background-color: #e8eeef;
-    color:#8a97a0;
-    -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
-    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
-    margin-bottom: 30px;
-
-}
-.form-style-5 input[type="text"]:focus,
-.form-style-5 input[type="date"]:focus,
-.form-style-5 input[type="datetime"]:focus,
-.form-style-5 input[type="email"]:focus,
-.form-style-5 input[type="number"]:focus,
-.form-style-5 input[type="search"]:focus,
-.form-style-5 input[type="time"]:focus,
-.form-style-5 input[type="url"]:focus,
-.form-style-5 textarea:focus,
-.form-style-5 select:focus{
-    background: #d2d9dd;
-}
-.form-style-5 select{
-    -webkit-appearance: menulist-button;
-    height:35px;
-}
-.form-style-5 .number {
-    background: #1abc9c;
-    color: #fff;
-    height: 30px;
-    width: 30px;
-    display: inline-block;
-    font-size: 0.8em;
-    margin-right: 4px;
-    line-height: 30px;
-    text-align: center;
-    text-shadow: 0 1px 0 rgba(255,255,255,0.2);
-    border-radius: 15px 15px 15px 0px;
-}
-
-.form-style-5 input[type="submit"],
-.form-style-5 input[type="button"]
-{
+    height: auto;
     position: relative;
-    display: block;
-    padding: 19px 39px 18px 39px;
-    color: #FFF;
-    margin: 0 auto;
-    background: #1abc9c;
-    font-size: 18px;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
     text-align: center;
-    font-style: normal;
-    width: 100%;
-    border: 1px solid #16a085;
-    border-width: 1px 1px 3px;
-    margin-bottom: 10px;
+    float: none;
+  }
 }
-.form-style-5 input[type="submit"]:hover,
-.form-style-5 input[type="button"]:hover
-{
-    background: #109177;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
